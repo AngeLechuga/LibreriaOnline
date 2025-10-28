@@ -1,0 +1,113 @@
+/*========================================================
+                    Custom propierties 
+==========================================================*/
+
+:root {
+    /* colores */
+    --azul: #b9d1e5;
+    --blanco: #f2f0f0;
+    --negro : #1b2130;
+    --grisoscuro: #79787e;
+    --gris: #e5e5e5;
+
+    /* Fuentes */
+    --fuentePrincipal : "Noto Sans", sans-serif;
+}
+
+/*========================================================
+                        Globales 
+==========================================================*/
+
+html {
+    box-sizing: border-box; /* Box model */
+    font-size: 62.5%; /* 1 REM = 10px */
+ 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background-color: var(--blanco);
+    font-size: 1.6rem; /* Tamaño fuente */
+    line-height: 1.5; /* Interlineado */
+}
+
+main {
+    margin: 2rem;
+}
+
+p {
+    font-size: 2rem; /* Tamaño de letra para * parrafos */
+    font-family: var(--fuentePrincipal); /* Fuente para * parrafos */
+    color: var(--negro) /* Color para  * parrafos */
+}
+
+a {
+    text-decoration: none; /* Quitar estilo de enlaces por defecto */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1,h2, h3 {
+    /* Estilo general de todos los encabezados */
+    text-align: center;
+    color: var(--negro);
+    font-family: var(--fuentePrincipal)
+}
+
+/* Tamaños de fuente para cada encabezado */
+h1 {font-size: 4rem;}
+h2 {font-size: 3.2rem;}
+h3 {font-size: 2.4rem;}
+
+/* =====================================================
+                        Clases 
+========================================================*/
+
+/* HEADER */
+.header {
+    display: flex; /* Flex */
+    flex-direction: column;
+    justify-content: center; /* Centrando logo */
+}
+
+.header__text {
+    text-align: center;
+}
+/* PORTADAS */
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.contenedor_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* GRID DE LIBRERO */
+.librero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--tercero);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__text {
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2rem;
+}
